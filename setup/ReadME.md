@@ -15,3 +15,9 @@
 ``./setup.sh``
 
 5.如果需要安装一些web服务执行``./web_setup.sh``
+
+6.如果需要添加用户则执行``./useradd.sh``
+
+升级日志
+
+2017.5.11 添加useradd.sh
