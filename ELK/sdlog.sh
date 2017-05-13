@@ -1,4 +1,5 @@
 #!/bin/bash
+#author:aoliaopaopao v1.0
 #将要打包的日志写到filelist下，datefile为日期存放目录
 date1=$(date '+%Y%m%d')
 #需要打包30天前的日志

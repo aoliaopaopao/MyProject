@@ -1,4 +1,5 @@
 #!/bin/bash
+#author:aoliaopaopao v1.0
 echo "请输入要添加的用户！"
 read name
 useradd -gusers $name

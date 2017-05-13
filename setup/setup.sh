@@ -1,12 +1,10 @@
 #!/bin/bash
-
-#安装常用工具
-
+#author:aoliaopaopao v1.0
 #文件位置
 dir=/root/setup
-
+#安装常用工具
 rpm -ivh epel-release-6-8.noarch.rpm
-yum install -y ntsysv wget vim openssh-clients java-1.8.0-openjdk* 
+yum install -y ntsysv wget vim openssh-clients java-1.8.0-openjdk*
 
 #修改network
 cat >> /etc/sysconfig/network << EOF
@@ -69,7 +67,7 @@ service iptables restart
 yum -y update
 
 #编译工具安装
-yum install -y crul curl-devel zlib-devel openssl-devel perl cpio expat-devel gettext-devel gcc perl-ExtUtils-MakeMaker  gcc make gcc-c++ 
+yum install -y crul curl-devel zlib-devel openssl-devel perl cpio expat-devel gettext-devel gcc perl-ExtUtils-MakeMaker  gcc make gcc-c++
 
 #git安装
 #wget https://www.kernel.org/pub/software/scm/git/git-2.11.1.tar.gz
@@ -98,7 +96,7 @@ source /etc/profile
 \cp -f settings.xml /usr/local/src/apache-maven-3.3.9/conf/
 
 #nodejs&&pm2
-#wget https://rpm.nodesource.com/setup_6.x 
+#wget https://rpm.nodesource.com/setup_6.x
 cd $dir
 chmod +x setup_6.x
 ./setup_6.x
