@@ -33,3 +33,4 @@ if [ "$judge3" = "y" ] ;then
 else
         echo "跳过安装redis，程序结束"
 fi
+
